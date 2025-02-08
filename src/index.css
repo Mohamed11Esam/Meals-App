@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  font-family: "Pacifico"!important;
+  font-weight: 600;
+  font-style: normal;
+  background: #F4F2EE;
+}
+.active {
+}
+.tabs-color {
+  color: #4b5a6d !important;
+  border: #4b5a6d 1px solid !important;
+}
+@theme {
+  --color-orange-primary: #f29724;
+  --color-grean-primary: #21ba75;
+}
+[drawer-backdrop] {
+  display: none;
+}
+aside .active{
+    background-color: #F29724;
+    color: white;
+}
+.active{
+  background-color: black;
+  color: white;
+}
