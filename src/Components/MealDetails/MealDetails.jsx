@@ -33,8 +33,8 @@ function MealDetails() {
           <h2 className="text-4xl text-center font-bold">{errorMSG}</h2>
         )}
         <h2 className="text-3xl font-bold">{mealDetails[0]?.strMeal}</h2>
-        <div className="flex flex-wrap min-h-dvw w-full">
-          <div className="w-1/3 p-2">
+        <div className="flex flex-col lg:flex-row flex-wrap min-h-dvw w-full">
+          <div className="lg:w-1/3 w-full p-2">
             <div>
               <img
                 className="w-full rounded-3xl"
@@ -63,12 +63,12 @@ function MealDetails() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 p-2 ">
-            <p className="font-bold text-xl">
+          <div className="lg:w-1/3 w-full p-2 ">
+            <p className="font-bold text-xl w-full">
               {mealDetails[0]?.strInstructions}
             </p>
           </div>
-          <div className="w-1/3 p-2 bg-white rounded-2xl h-fit">
+          <div className="lg:w-1/3 w-full p-2 bg-white rounded-2xl h-fit">
             <h3 className="text-3xl">Ingrediants</h3>
             <hr className="border-gray-300 my-4 border-2" />
             <div className="flex justify-between">
